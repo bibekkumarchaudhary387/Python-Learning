@@ -1,0 +1,11 @@
+Control flow (Making decision)
+Goal: learn if, else and logical operators
+* Equals : ==
+Not Equals: !=
+Greater/less : >,<.<=,>=
+structure:
+age = 20
+if age>=18:
+    print("You are young")
+else:
+    print("You are minor")
