@@ -1,0 +1,28 @@
+Functions (The "DRY" Principle)
+
+Today goal: Stop writing the same code twice. DRY principle: Don't Repeat Yourself
+
+What is functions?
+A function is a block of code that only runs when you call it. Think of it like a "Recipe". You write the recipe once, but you can cook the meal as many times as you want.
+
+The syntax:
+--> def : tells python you are making a function
+--> return : sends the answer back to the main program
+
+1. Defining the function (The recipe)
+    def my_greeting(name):
+        print(f"Hello, {name}!")
+
+2. Calling the function (cooking)
+    my_greeting("Alice")
+    my_greeting("Bob")
+
+Return vs. Print (crucial concept)
+--> print : just shows text on the screen. The computer "forgots" the value immediatly
+--> return : gives the value back to the code so you can store it in a variable
+
+    def add_numbers(a, b):
+        return a + 
+    
+    result = add_numbers(5, 10): #request now holds 15
+    print(result)
