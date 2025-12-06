@@ -1,0 +1,15 @@
+
+a. The for loop use this when you know how many times you want to repeat somthing. We often use it with range()
+
+range(start, start) - stop is not included!
+This prints 1, 2, 3, 4 (It stops before 5)
+for number in range(1, 5):
+    print(number)
+
+b. The while loop use this when you want to loop as long as a condition is True.
+
+count = 0
+while count < 3:
+    print("Loading...")
+    count += 1 #crucial! if you forget this, the loop runs FOREVER (Infinite loop)
+
