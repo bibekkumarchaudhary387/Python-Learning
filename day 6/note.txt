@@ -1,0 +1,25 @@
+List (Storing  multiple items)
+
+Goal: Move beyong single variable up until now if you wanted to store 5 names, you needed name1, name2, name3..., this us messy. Today, we use list to store them all in one place.
+
+A list []
+--> A list is an ordered collection of items you can chaneg it (add/remove items) anytime.
+
+#A list of fruits
+fruits = ["Apple", "Banana", "Cherry"]
+
+#python counts from 0
+print(fruits[0]) #print "Apple"
+print(fruits[1]) #print "Banana"
+print(fruits[-1]) #print "cherry" (negative indexing)
+
+Modifying the list:
+--> Add item: fruits.append("Orange") --> add to the end
+--> Remove item: fruits.pop() --> remove the last one
+--> Insert item: fruits: fruits.insert(1, "Mango") --> puts mango at index 1
+
+Tuple
+--> A tuple is a "Locked list", once you created it, you cannot change it. Use this for data that shouldn't change (like coordinates or drag of the web)
+
+coordinates = (10,20)
+#coordinates[0] = 15 <-- ERROR! you can't change tuple
