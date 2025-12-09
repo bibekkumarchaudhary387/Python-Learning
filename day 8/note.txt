@@ -1,0 +1,34 @@
+Dictioaries: (Key Value Pairs)
+
+Goal: Store data like professional. Lists ([]) are great for ordered items, but they are bad for lebelled data. If you have a user profile, you don't want to remember that index 0 is the name and index 1 is the email. You want to lebel them.
+
+The Dictioaries {}
+-->A dictioaries is a collection of keys and values.
+ key: The label (likes word in book)
+ value: The data (likes the definition)
+
+ Syntax
+    key on the left: value on the right
+
+    user = {
+        "name": "Alex",
+        "age": 25,
+        "is_student": True
+    }
+
+    Accessing data (use the key, not a number)
+    print(user["name"]) --> print Alex
+    print(user["age]) --> print 25
+
+    Modifying Dictioaries
+    1. Changing a value
+    user["age"] = 26
+
+    2. Adding a new key - value Pairs
+    user["city"] = "kathmandu"
+
+    3. Checking if a key exists
+    if "email" in user:
+        print(user["email"])
+    else:
+        print("No email found")
