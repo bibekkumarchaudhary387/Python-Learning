@@ -16,12 +16,12 @@ import random as ludo
 while True:
 	user = input("Press Enter to roll (or type 'quit' to exit): ")
 	
-	if user == "quit".lower:
+	if user.lower() == "quit":
+		print("Thanks for playing! Goodbye!")
 		break
 	
 	dice = ludo.randint(1,6)
 	print(f"You rolled a {dice}! 🎲")
 
 	if dice == 6:
-		print("Wow! You get another turn!")
-	
+		print("Wow! You get another turn!")	
