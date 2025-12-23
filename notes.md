@@ -202,3 +202,23 @@ Task A: The Car Creator
 2. In __init__, give it attributes: brand and color.
 3. Create a method called drive that prints: "The [color] [brand] is driving!"
 4. Create two different cars (e.g., a Red Tesla and a Blue Toyota) and make them both drive.
+
+17. 
+
+Object-Oriented Programming (OOP) - Part 2
+
+goal: Change the object's data. Yesterday, we just read data (self.name). Today, we modify it. This is the heart of software engineering: objects that change over time (like a user's bank balance changing when they buy something).
+
+example,
+
+    class Counter:
+    def __init__(self):
+        self.count = 0  # Starts at 0
+
+    def click(self):
+        self.count += 1 # Adds 1 to the specific object's count
+        print(f"Click! Count is now: {self.count}")
+
+my_clicker = Counter()
+my_clicker.click() # Prints 1
+my_clicker.click() # Prints 2
