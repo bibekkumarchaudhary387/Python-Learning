@@ -222,3 +222,41 @@ example,
 my_clicker = Counter()
 my_clicker.click() # Prints 1
 my_clicker.click() # Prints 2
+
+18. Inheritance (The Family Tree)
+goal: Don't write the same code twice. If you are building a game with Dogs, Cats, and Birds, they all need a name, age, and a sleep() method. Instead of writing that 3 times, we create a parent class called Animal.
+
+Inheritance allows a "child" class to take all atributes and methods from a "parent" class.
+
+Syntax: class Child(Parent):
+
+    #1. The Parent (Base Class)
+    class Animal:
+        def __init__(self, name):
+            self.name = name
+
+        def sleep(self):
+            print(f"{self.name} is sleeping... Zzz")
+    
+    #2. The Child (Subclass) - Inherits from Animal
+    class Dog(Animal):
+        def bark(self):
+            print("Woof! Woof!)
+    
+    #3. Usage
+    my_dog = Dog("Sheru")
+    my_dog.sleep() # Inheritance from Animal!
+    my_dog.bark() # Specific to DOg
+
+Super() - The Power Move: If the child needs its own __init__, but you still want to run the parent's __inti__, use super().
+
+    class Dog(Animal):
+        super().__init__(name) #let Animal Handle the name
+        self.breed = breed
+
+Task A: The vehicle factory
+
+1. Create a parent class Vehicle with brand and model. Add a method drive().
+2. Create a child class Car that inherits from Vehicle. Add a method honk().
+3. Create an instance of Car.call drive() (from parent) and honk() (from child).
+
