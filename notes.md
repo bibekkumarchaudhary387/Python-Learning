@@ -260,3 +260,50 @@ Task A: The vehicle factory
 2. Create a child class Car that inherits from Vehicle. Add a method honk().
 3. Create an instance of Car.call drive() (from parent) and honk() (from child).
 
+19. 
+
+APIs (Connecting to the Web)
+
+goal: Make your code talk to the outsider world. So far, your code has lived inside tour laptop. Today, we break out. We will write code that fetches live data (Weathe, stock prices, jokes) from other servers.
+
+What is an API?
+-> API stands for Application Programming Interfae. Think of it like a waiter in a restaurant.
+
+ * You (The client) : you look at the menu and give an order to the waiter.
+ * The waiter (The API): Takes your request to the kitchen.
+ * The kitchen (The Server): Prepares the food (data).
+ * The waiter: brings the food back to you
+
+ The tool: we use library called requests. You might need to install it first. Open your ternimal/command prompt and type: pip install requests
+
+ JSON (The language of APIs)
+ -> WHen the internet sends you data, it doesn't send a python object. it sends JSON (javascript object notation).
+
+ * JSOn looks like a python Dictionary!
+ * Example: {"name": "Bibek", "city": "Kathmandu"}
+
+ Example: (The basic request we will fetch some dummy data set to test).
+
+    import requests
+
+    # 1. The URL (The Menu)
+    url = "https://jsonplaceholder.typicode.com/posts/1"
+
+    # 2. The Request (Asking the Waiter)
+    response = requests.get(url)
+
+    # 3. The Status (Did the kitchen accept the order?)
+    # 200 = OK (Success)
+    # 404 = Not Found (Error)
+    print(f"Status Code: {response.status_code}")
+
+    # 4. The Data (The Food)
+    data = response.json() # Converts JSON string to Python Dictionary
+    print(data["title"])
+
+    Taks A: The Astronaut Finder There is a free API that tells you who is currently in space.
+
+    URL: http://api.open-notify.org/astros.json
+    Goal: Fetch the data and print the number of people currently in space.
+
+20.  

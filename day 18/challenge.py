@@ -4,13 +4,9 @@
 # Method work(): Prints "[Name] is working."
 # Create a class Manager that inherits from Employee.
 # Add a new method meeting(): Prints "[Name] is holding a meeting."
-
 # Override the work() method: Make it print "[Name] is supervising others." (Polymorphism!).
-
 # Test it:
-
 # Create an Employee "Ram" (Salary 50k). Call work().
-
 # Create a Manager "Sita" (Salary 100k). Call work() and meeting().
 
 class Employee:
