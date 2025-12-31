@@ -4,6 +4,9 @@ root = tk.Tk()
 root.title("Color checker")
 root.geometry("300x300")
 
+def reset():
+     root.config(bg = "white")
+
 def apply_color():
     try:
         valid_color = color_in.get().strip()
@@ -21,6 +24,9 @@ color_in.pack()
 
 btn1 = tk.Button(root, text="Apply Color", command=apply_color)
 btn1.pack()
+
+btn2 = tk.Button(root, text="Reset", command=reset)
+btn2.pack()
 
 label = tk.Label(root, text='')
 label.pack()
