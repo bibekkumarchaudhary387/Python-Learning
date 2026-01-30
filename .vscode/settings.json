@@ -1,3 +1,10 @@
 {
-    "amazonQ.showCodeWithReferences": false
+    "amazonQ.showCodeWithReferences": false,
+    "github.copilot.chat.enableUserPreferences": false,
+    "github.copilot.chat.cloudAgent.enabled": false,
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+    "github.copilot.chat.copilotDebugCommand.enabled": false,
+    "github.copilot.chat.customInstructionsInSystemMessage": false,
+    "github.copilot.chat.edits.suggestRelatedFilesForTests": false,
+    "github.copilot.chat.edits.suggestRelatedFilesFromGitHistory": false
 }
